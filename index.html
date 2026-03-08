@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giga Group | ISP Kompani në Gjilan</title>
+  <meta name="description" content="Giga Group - ISP kompani në Gjilan me internet me fibër optike dhe TV. Pako mujore 15€ dhe pako vjetore 150€ me 2 muaj gratis." />
+  <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="Giga Group | Internet me fibër optike dhe TV" />
+  <meta property="og:description" content="ISP kompani në Gjilan. Internet me fibër optike, TV dhe paketa 300/300 Mbps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" />
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1b2d;
+      --card: rgba(255,255,255,0.06);
+      --line: rgba(255,255,255,0.1);
+      --text: #f8fbff;
+      --muted: #b7c4d6;
+      --cyan: #48d9ff;
+      --blue: #2563eb;
+      --green: #25D366;
+      --violet: #7360f2;
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 26px;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(72,217,255,.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(37,99,235,.16), transparent 30%),
+        radial-gradient(circle at bottom center, rgba(115,96,242,.12), transparent 28%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      border-radius: 18px; padding: 14px 20px; font-weight: 800; transition: .25s ease;
+      border: 1px solid transparent; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: linear-gradient(135deg, var(--cyan), #81ecff); color: #06101a; }
+    .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line); }
+    .btn-whatsapp { background: var(--green); color: white; }
+    .btn-viber { background: var(--violet); color: white; }
+    .btn-facebook { background: #1877f2; color: white; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
+      background: rgba(7,17,31,.74); border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 14px; }
+    .logo-box {
+      background: rgba(255,255,255,.96); border-radius: 20px; padding: 10px 14px; box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.2);
+    }
+    .nav { display: flex; gap: 22px; color: var(--muted); font-weight: 600; }
+    .nav a:hover { color: white; }
+
+    .hero {
+      padding: 74px 0 34px;
+      display: grid; grid-template-columns: 1.12fr .88fr; gap: 34px; align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; gap: 10px; align-items: center;
+      border: 1px solid rgba(72,217,255,.25); background: rgba(72,217,255,.09);
+      color: #abf0ff; padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 700;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.02; margin: 18px 0 0; letter-spacing: -0.04em;
+    }
+    .hero p {
+      color: var(--muted); font-size: 18px; max-width: 700px; margin-top: 20px;
+    }
+    .hero-actions, .contact-actions, .share-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 30px; }
+    .stat, .card, .faq, .contact-side, .coverage-card, .service-card {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .stat { padding: 18px; }
+    .stat strong { display: block; color: var(--cyan); font-size: 32px; line-height: 1; }
+    .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 14px; }
+
+    .hero-panel {
+      padding: 24px; background: linear-gradient(135deg, rgba(72,217,255,.12), rgba(37,99,235,.07), rgba(115,96,242,.08));
+      border-radius: 34px; border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .hero-panel-inner {
+      background: rgba(8,17,31,.78); border: 1px solid var(--line); border-radius: 28px; padding: 28px;
+    }
+    .mini-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 18px; }
+    .mini-item { text-align: center; padding: 16px; border-radius: 20px; background: rgba(255,255,255,.05); border: 1px solid var(--line); }
+    .mini-item strong { display: block; color: var(--cyan); font-size: 22px; }
+    .offer-box { padding: 18px; border-radius: 24px; border: 1px solid rgba(72,217,255,.2); background: rgba(72,217,255,.1); margin-top: 14px; }
+    .offer-box.blue { border-color: rgba(37,99,235,.25); background: rgba(37,99,235,.12); }
+
+    section { padding: 46px 0; }
+    .section-title { max-width: 820px; margin: 0 auto; text-align: center; }
+    .section-title.left { text-align: left; margin: 0; }
+    .section-title .label { color: var(--cyan); font-size: 13px; text-transform: uppercase; letter-spacing: .28em; font-weight: 800; }
+    .section-title h2 { font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; margin: 10px 0 0; }
+    .section-title p { margin-top: 16px; color: var(--muted); font-size: 18px; }
+
+    .services, .packages, .fiber-grid, .coverage, .faq-grid { display: grid; gap: 18px; }
+    .services { grid-template-columns: repeat(3,1fr); margin-top: 30px; }
+    .packages { grid-template-columns: repeat(2,1fr); margin-top: 30px; }
+    .service-card, .card, .faq, .coverage-card { padding: 24px; }
+    .service-card .icon, .fiber-item .icon { font-size: 38px; }
+    .service-card h3, .card h3, .faq h3, .coverage-card h3 { margin: 14px 0 0; font-size: 25px; }
+    .service-card p, .card p, .faq p, .coverage-card p, .fiber-item p { color: var(--muted); }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px;
+      background: rgba(72,217,255,.1); border: 1px solid rgba(72,217,255,.16); color: #b7f3ff; font-size: 13px; font-weight: 700;
+    }
+    .price { font-size: 56px; line-height: 1; color: var(--cyan); font-weight: 900; margin-top: 12px; }
+    .list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+    .list li { display: flex; gap: 10px; align-items: flex-start; color: #edf5ff; }
+    .tick {
+      width: 24px; height: 24px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center;
+      background: rgba(72,217,255,.12); color: var(--cyan); font-weight: 900; flex: 0 0 24px;
+    }
+
+    .fiber-wrap { display: grid; grid-template-columns: .92fr 1.08fr; gap: 24px; align-items: start; }
+    .fiber-grid { grid-template-columns: repeat(2,1fr); }
+    .fiber-item {
+      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);
+    }
+
+    .reasons {
+      margin-top: 26px; display: grid; gap: 12px;
+    }
+    .reason {
+      display: flex; gap: 12px; align-items: center; background: rgba(255,255,255,.05); border: 1px solid var(--line);
+      border-radius: 18px; padding: 14px 16px;
+    }
+
+    .coverage { grid-template-columns: repeat(3,1fr); margin-top: 30px; }
+    .faq-grid { grid-template-columns: repeat(2,1fr); margin-top: 30px; }
+
+    .contact-wrap {
+      display: grid; grid-template-columns: 1.1fr .9fr; overflow: hidden; border-radius: 34px;
+      border: 1px solid var(--line); background: rgba(255,255,255,.05); box-shadow: var(--shadow);
+    }
+    .contact-main, .contact-side { padding: 34px; }
+    .contact-side { background: rgba(6,16,29,.84); border-left: 1px solid var(--line); }
+    .contact-list { display: grid; gap: 18px; margin-top: 24px; }
+    .small { color: #8da4bf; font-size: 14px; }
+
+    .share-box {
+      margin-top: 24px; padding: 18px; border-radius: 24px; background: rgba(24,119,242,.12); border: 1px solid rgba(24,119,242,.24);
+    }
+
+    .floating-actions {
+      position: fixed; right: 16px; bottom: 16px; display: grid; gap: 12px; z-index: 60;
+    }
+    .floating-actions a {
+      width: 58px; height: 58px; border-radius: 999px; display: grid; place-items: center; font-size: 22px; color: white;
+      box-shadow: 0 18px 32px rgba(0,0,0,.35);
+    }
+    .floating-actions .wa { background: var(--green); }
+    .floating-actions .vb { background: var(--violet); }
+
+    footer {
+      border-top: 1px solid var(--line); padding: 24px 0 40px; color: #8ea4bd; text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .hero, .fiber-wrap, .contact-wrap, .services, .packages, .coverage, .faq-grid { grid-template-columns: 1fr; }
+      .stats, .mini-grid, .fiber-grid { grid-template-columns: repeat(2,1fr); }
+      .nav { display: none; }
+      .contact-side { border-left: 0; border-top: 1px solid var(--line); }
+    }
+
+    @media (max-width: 640px) {
+      .stats, .mini-grid, .fiber-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 40px; }
+      .price { font-size: 46px; }
+      .contact-main, .contact-side, .service-card, .card, .faq, .coverage-card { padding: 22px; }
+      .floating-actions { right: 12px; bottom: 12px; }
+      .floating-actions a { width: 54px; height: 54px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#ballina">
+        <div class="logo-box">
+          <svg viewBox="0 0 420 160" width="160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Giga Group logo">
+            <text x="18" y="92" font-size="78" font-weight="800" font-family="Arial, sans-serif" fill="#1447D7">GIGA</text>
+            <text x="242" y="120" font-size="40" font-weight="500" font-family="Arial, sans-serif" fill="#1447D7">group</text>
+            <path d="M296 62C310 69 320 81 324 96" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+            <path d="M310 49C328 59 340 76 345 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+            <path d="M325 37C346 49 360 69 366 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+            <path d="M340 25C365 39 381 63 388 98" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div style="font-weight:900;font-size:20px">Giga Group</div>
+          <div class="small">ISP kompani • Gjilan</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#sherbimet">Shërbimet</a>
+        <a href="#paketat">Paketat</a>
+        <a href="#fibra">Fibra Optike</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="ballina">
+    <section>
+      <div class="container hero">
+        <div>
+          <div class="eyebrow">Internet me fibër optike • TV • 300/300 Mbps</div>
+          <h1>Internet modern për shtëpi dhe biznes në <span style="color:var(--cyan)">Gjilan</span>.</h1>
+          <p>
+            <strong style="color:white">Giga Group</strong> prezantohet si ISP kompani me fokus te interneti me fibër optike, stabiliteti i lidhjes dhe përvoja moderne digjitale. Faqja është gati për publikim, me kontakt direkt në WhatsApp dhe Viber, pako të qarta dhe dizajn të fortë për promovim edhe në Facebook.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#paketat">Shiko paketat</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin%20me%20fib%C3%ABr%20optike." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-viber" href="viber://chat?number=%2B38346133129">Viber</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>300</strong><span>Mbps download</span></div>
+            <div class="stat"><strong>300</strong><span>Mbps upload</span></div>
+            <div class="stat"><strong>15€</strong><span>Pako mujore</span></div>
+            <div class="stat"><strong>150€</strong><span>Pako vjetore</span></div>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-panel-inner">
+            <div style="display:flex;justify-content:space-between;gap:14px;align-items:start;flex-wrap:wrap">
+              <div>
+                <div class="small" style="letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:800">Prezencë zyrtare</div>
+                <div style="font-size:34px;font-weight:900;margin-top:8px">Giga Group</div>
+                <div style="color:var(--muted);margin-top:6px">Internet me fibër optike dhe TV</div>
+              </div>
+              <div class="logo-box">
+                <svg viewBox="0 0 420 160" width="130" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <text x="18" y="92" font-size="78" font-weight="800" font-family="Arial, sans-serif" fill="#1447D7">GIGA</text>
+                  <text x="242" y="120" font-size="40" font-weight="500" font-family="Arial, sans-serif" fill="#1447D7">group</text>
+                  <path d="M296 62C310 69 320 81 324 96" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M310 49C328 59 340 76 345 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M325 37C346 49 360 69 366 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M340 25C365 39 381 63 388 98" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="offer-box">
+              <div class="small" style="color:#baf5ff">Oferta mujore</div>
+              <div class="price">15€</div>
+              <div style="margin-top:8px;color:var(--muted)">1 muaj internet + TV • 300 Mbps download • 300 Mbps upload</div>
+            </div>
+
+            <div class="offer-box blue">
+              <div class="small" style="color:#c7d8ff">Oferta vjetore</div>
+              <div class="price" style="color:#9cc4ff">150€</div>
+              <div style="margin-top:8px;color:var(--muted)">Pako vjetore me 2 muaj gratis • po të njëjtat specifika</div>
+            </div>
+
+            <div class="mini-grid">
+              <div class="mini-item"><strong>FTTH</strong><span class="small">Fibër optike</span></div>
+              <div class="mini-item"><strong>SIM</strong><span class="small">Shpejtësi simetrike</span></div>
+              <div class="mini-item"><strong>TV</strong><span class="small">Argëtim ditor</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sherbimet">
+      <div class="container">
+        <div class="section-title">
+          <div class="label">Shërbimet</div>
+          <h2>Zgjidhje interneti për nevojat e sotme</h2>
+          <p>Faqja është ndërtuar që Giga Group të paraqitet si ISP kompani serioze, me prezantim të qartë dhe profesional.</p>
+        </div>
+
+        <div class="services">
+          <div class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Internet për shtëpi</h3>
+            <p>Për shfletim, rrjete sociale, video-thirrje, mësim online dhe përdorim të përditshëm nga disa pajisje njëkohësisht.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">🏢</div>
+            <h3>Internet për biznes</h3>
+            <p>Për zyra, operim digjital, ngarkim dokumentesh, cloud dhe komunikim profesional me lidhje të qëndrueshme.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon">📺</div>
+            <h3>TV + internet</h3>
+            <p>Kombinim praktik për familje dhe klientë që duan internet me performancë të lartë dhe argëtim në një paketë.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paketat">
+      <div class="container">
+        <div class="section-title">
+          <div class="label">Paketat</div>
+          <h2>Oferta të qarta, me performancë të lartë</h2>
+          <p>Dy pako të thjeshta dhe të forta për klientë që kërkojnë internet të qëndrueshëm dhe TV në një zgjidhje të vetme.</p>
+        </div>
+
+        <div class="packages">
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap">
+              <div>
+                <div style="font-size:28px;font-weight:900">Pako Mujore</div>
+                <div class="price">15€</div>
+              </div>
+              <div class="badge">Më e kërkuara</div>
+            </div>
+            <div class="badge" style="margin-top:12px">Internet + TV</div>
+            <p style="margin-top:16px">Zgjidhje praktike për shtëpi, me shpejtësi simetrike dhe argëtim të përditshëm.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span><span>1 muaj internet dhe TV</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps download</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps upload</span></li>
+              <li><span class="tick">✓</span><span>Lidhje me fibër optike</span></li>
+              <li><span class="tick">✓</span><span>E përshtatshme për familje</span></li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20mujore%2015%E2%82%AC." target="_blank" rel="noopener">Aktivizo në WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap">
+              <div>
+                <div style="font-size:28px;font-weight:900">Pako Vjetore</div>
+                <div class="price">150€</div>
+              </div>
+              <div class="badge">2 muaj gratis</div>
+            </div>
+            <div class="badge" style="margin-top:12px">Vlera më e mirë</div>
+            <p style="margin-top:16px">Më shumë vlerë gjatë vitit, me të njëjtat performanca dhe kosto më të favorshme.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span><span>12 muaj internet dhe TV</span></li>
+              <li><span class="tick">✓</span><span>Paguan për 10 muaj</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps download</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps upload</span></li>
+              <li><span class="tick">✓</span><span>Kursim më i madh afatgjatë</span></li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20vjetore%20150%E2%82%AC." target="_blank" rel="noopener">Aktivizo në WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fibra">
+      <div class="container fiber-wrap">
+        <div>
+          <div class="section-title left">
+            <div class="label">Fibra Optike</div>
+            <h2>Pse fibra optike është zgjedhje e fortë për internet?</h2>
+            <p>
+              Fibra optike transmeton të dhëna përmes impulseve të dritës në fije shumë të holla, gjë që mundëson kapacitet të lartë, performancë moderne dhe përdorim më të favorshëm për nevojat e sotme digjitale.
+            </p>
+          </div>
+          <div class="card" style="margin-top:22px">
+            <p style="font-size:18px">
+              Për klientin, kjo nënkupton përvojë më të mirë në streaming, video-thirrje, përdorim të shumë pajisjeve, ngarkim skedarësh dhe punë online. Paketa 300/300 Mbps është e përshtatshme sidomos sepse upload dhe download janë të barabarta.
+            </p>
+          </div>
+
+          <div class="section-title left" style="margin-top:28px">
+            <div class="label">Pse Giga Group</div>
+            <h2 style="font-size:34px">Një prezantim që i përshtatet një ISP kompanie</h2>
+          </div>
+          <div class="reasons">
+            <div class="reason"><span class="tick">✓</span><span>ISP kompani me fokus te cilësia e lidhjes</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Shpejtësi 300/300 Mbps për përvojë të balancuar</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Pako të qarta dhe të lehta për t’u zgjedhur</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Kontakt direkt me WhatsApp dhe Viber</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Dizajn i gatshëm për promovim në Facebook</span></div>
+          </div>
+        </div>
+
+        <div class="fiber-grid">
+          <div class="fiber-item">
+            <div class="icon">💡</div>
+            <h3>Teknologji me dritë</h3>
+            <p>Fibra optike bart të dhëna me dritë, duke mundësuar kapacitet të lartë dhe transmetim modern.</p>
+          </div>
+          <div class="fiber-item">
+            <div class="icon">⚖️</div>
+            <h3>Shpejtësi simetrike</h3>
+            <p>Upload dhe download të barabartë janë shumë të vlefshme për video-thirrje, cloud dhe punë online.</p>
+          </div>
+          <div class="fiber-item">
+            <div class="icon">🛡️</div>
+            <h3>Stabilitet më i lartë</h3>
+            <p>Lidhja është më e qëndrueshme dhe më e përshtatshme kur përdoren shumë pajisje njëkohësisht.</p>
+          </div>
+          <div class="fiber-item">
+            <div class="icon">🚀</div>
+            <h3>Gati për nevoja moderne</h3>
+            <p>Streaming, IPTV, gaming, punë në distancë dhe mësim online kërkojnë internet të shpejtë dhe të besueshëm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <div class="label">Mbulim dhe instalim</div>
+          <h2>Gati për aktivizim në Gjilan</h2>
+          <p>Ky seksion e bën faqen më të plotë dhe më bindëse për klientët që duan të kontaktojnë menjëherë.</p>
+        </div>
+        <div class="coverage">
+          <div class="coverage-card">
+            <h3>Lokacioni</h3>
+            <p>Giga Group prezantohet si ofrues lokal me fokus në zonën e Gjilanit.</p>
+          </div>
+          <div class="coverage-card">
+            <h3>Instalim</h3>
+            <p>Klienti udhëzohet drejt telefonatës ose mesazhit të drejtpërdrejtë për aktivizim të shpejtë.</p>
+          </div>
+          <div class="coverage-card">
+            <h3>Mbështetje</h3>
+            <p>Numri kontaktues është vendosur qartë që përdoruesi të veprojë menjëherë.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <div class="label">Pyetje të shpeshta</div>
+          <h2>Informata të dobishme për klientët</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq">
+            <h3>Çfarë është interneti me fibër optike?</h3>
+            <p>Është internet që bart të dhënat me anë të dritës në kabllo optike, duke ofruar shpejtësi të larta dhe lidhje të qëndrueshme.</p>
+          </div>
+          <div class="faq">
+            <h3>Pse 300 Mbps download dhe 300 Mbps upload janë të rëndësishme?</h3>
+            <p>Sepse shpejtësia simetrike ndihmon jo vetëm në shfletim dhe streaming, por edhe në video-thirrje, cloud dhe ngarkim skedarësh.</p>
+          </div>
+          <div class="faq">
+            <h3>A është kjo pako e përshtatshme për familje?</h3>
+            <p>Po. Është e përshtatshme për përdorim nga disa pajisje njëkohësisht, për TV, telefona, laptopë dhe platforma digjitale.</p>
+          </div>
+          <div class="faq">
+            <h3>A mund ta promovoj në Facebook?</h3>
+            <p>Po. Faqja është ndërtuar me titull, përshkrim dhe pamje që ta bëjë më tërheqëse kur ta shpërndash pasi të publikohet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="container contact-wrap">
+        <div class="contact-main">
+          <div class="label">Kontakt</div>
+          <h2 style="font-size:clamp(30px,4.6vw,52px);margin:10px 0 0">Bëhu pjesë e rrjetit të Giga Group</h2>
+          <p style="color:var(--muted);font-size:18px;max-width:700px;margin-top:18px">
+            Për internet me fibër optike dhe TV në Gjilan, kontakto Giga Group dhe zgjedh paketën që të përshtatet më së miri.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+38346133129">+383 46 133 129</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-viber" href="viber://chat?number=%2B38346133129">Viber</a>
+          </div>
+
+          <div class="share-box">
+            <strong style="display:block;font-size:20px">Për share në Facebook</strong>
+            <p style="color:var(--muted);margin:10px 0 0">
+              Pasi ta publikosh faqen, zëvendëso linkun te butoni Facebook me linkun real të faqes tënde dhe shpërndaje menjëherë.
+            </p>
+            <div class="share-actions">
+              <a class="btn btn-facebook" id="facebookShareBtn" href="#" target="_blank" rel="noopener">Shpërndaje në Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-side">
+          <div class="logo-box" style="display:inline-block">
+            <svg viewBox="0 0 420 160" width="150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="18" y="92" font-size="78" font-weight="800" font-family="Arial, sans-serif" fill="#1447D7">GIGA</text>
+              <text x="242" y="120" font-size="40" font-weight="500" font-family="Arial, sans-serif" fill="#1447D7">group</text>
+              <path d="M296 62C310 69 320 81 324 96" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+              <path d="M310 49C328 59 340 76 345 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+              <path d="M325 37C346 49 360 69 366 97" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+              <path d="M340 25C365 39 381 63 388 98" stroke="#1447D7" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="contact-list">
+            <div>
+              <div class="small">Kompania</div>
+              <div style="font-size:22px;font-weight:800">Giga Group</div>
+            </div>
+            <div>
+              <div class="small">Profili</div>
+              <div style="font-size:22px;font-weight:800">ISP kompani</div>
+            </div>
+            <div>
+              <div class="small">Adresa</div>
+              <div style="font-size:22px;font-weight:800">Gjilan</div>
+            </div>
+            <div>
+              <div class="small">Numri kontaktues</div>
+              <a href="tel:+38346133129" style="font-size:24px;font-weight:900;color:var(--cyan)">+383 46 133 129</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="floating-actions">
+    <a class="wa" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+    <a class="vb" href="viber://chat?number=%2B38346133129" aria-label="Viber">✦</a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Giga Group • ISP kompani • Gjilan • Internet me fibër optike dhe TV
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const SITE_URL = 'https://vendose-linkun-tuaj.com';
+    const facebookBtn = document.getElementById('facebookShareBtn');
+    facebookBtn.addEventListener('click', function (e) {
+      if (SITE_URL.includes('vendose-linkun-tuaj.com')) {
+        e.preventDefault();
+        alert('Pasi ta publikosh faqen, zëvendëso SITE_URL te kodi me linkun real të faqes. Pastaj butoni Facebook punon direkt.');
+      } else {
+        facebookBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL);
+      }
+    });
+  </script>
+</body>
+</html>

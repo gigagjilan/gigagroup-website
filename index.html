@@ -573,13 +573,7 @@
     const MAP_LINK = "https://maps.app.goo.gl/PqxwPnw7t98mKi2J8";
 
     document.getElementById("openMapsBtn").addEventListener("click", function () {
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-      if (isIOS) {
-        window.open("https://maps.apple.com/?q=Giga+Group+Gjilan", "_blank");
-      } else {
-        window.open(MAP_LINK, "_blank");
-      }
+      window.open(MAP_LINK, "_blank");
     });
 
 

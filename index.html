@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giga Group | ISP Kompani në Gjilan</title>
-  <meta name="description" content="Giga Group - ISP kompani në Gjilan me internet me fibër optike dhe TV. Pako mujore 15€ dhe pako vjetore 150€ me 2 muaj gratis." />
+  <meta name="description" content="Giga Group - ISP kompani në Gjilan me internet me fibër optike dhe TV. Pako mujore 15€ dhe pako vjetore 150€ me 2 muaj falas." />
   <meta name="theme-color" content="#07111f" />
   <meta property="og:title" content="Giga Group | Internet me fibër optike dhe TV" />
   <meta property="og:description" content="ISP kompani në Gjilan. Internet me fibër optike, TV dhe paketa 300/300 Mbps." />
@@ -44,28 +44,46 @@
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
     .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+
     .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-      border-radius: 18px; padding: 14px 20px; font-weight: 800; transition: .25s ease;
-      border: 1px solid transparent; cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 18px;
+      padding: 14px 20px;
+      font-weight: 800;
+      transition: .25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
     }
     .btn:hover { transform: translateY(-2px); }
     .btn-primary { background: linear-gradient(135deg, var(--cyan), #81ecff); color: #06101a; }
-    .btn-ghost { background: rgba(255,255,255,.05); border-color: var(--line); }
     .btn-whatsapp { background: var(--green); color: white; }
     .btn-viber { background: var(--violet); color: white; }
     .btn-facebook { background: #1877f2; color: white; }
 
     .topbar {
-      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(14px);
-      background: rgba(7,17,31,.74); border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(7,17,31,.74);
+      border-bottom: 1px solid var(--line);
     }
     .topbar-inner {
-      display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 0;
     }
     .brand { display: flex; align-items: center; gap: 14px; }
     .logo-box {
-      background: rgba(255,255,255,.96); border-radius: 20px; padding: 10px 14px; box-shadow: var(--shadow);
+      background: rgba(255,255,255,.96);
+      border-radius: 20px;
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
       border: 1px solid rgba(255,255,255,.2);
     }
     .nav { display: flex; gap: 22px; color: var(--muted); font-weight: 600; }
@@ -73,119 +91,378 @@
 
     .hero {
       padding: 74px 0 34px;
-      display: grid; grid-template-columns: 1.12fr .88fr; gap: 34px; align-items: center;
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      gap: 34px;
+      align-items: center;
     }
+
     .eyebrow {
-      display: inline-flex; gap: 10px; align-items: center;
-      border: 1px solid rgba(72,217,255,.25); background: rgba(72,217,255,.09);
-      color: #abf0ff; padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 700;
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid rgba(72,217,255,.25);
+      background: rgba(72,217,255,.09);
+      color: #abf0ff;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
     }
+
     h1 {
       font-size: clamp(38px, 6vw, 68px);
-      line-height: 1.02; margin: 18px 0 0; letter-spacing: -0.04em;
+      line-height: 1.02;
+      margin: 18px 0 0;
+      letter-spacing: -0.04em;
     }
+
     .hero p {
-      color: var(--muted); font-size: 18px; max-width: 700px; margin-top: 20px;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 700px;
+      margin-top: 20px;
     }
-    .hero-actions, .contact-actions, .share-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
-    .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 30px; }
+
+    .hero-actions, .contact-actions, .share-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 14px;
+      margin-top: 30px;
+    }
+
     .stat, .card, .faq, .contact-side, .coverage-card, .service-card {
-      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
+
     .stat { padding: 18px; }
-    .stat strong { display: block; color: var(--cyan); font-size: 32px; line-height: 1; }
-    .stat span { display: block; margin-top: 8px; color: var(--muted); font-size: 14px; }
+    .stat strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 32px;
+      line-height: 1;
+    }
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
     .hero-panel {
-      padding: 24px; background: linear-gradient(135deg, rgba(72,217,255,.12), rgba(37,99,235,.07), rgba(115,96,242,.08));
-      border-radius: 34px; border: 1px solid var(--line);
+      padding: 24px;
+      background: linear-gradient(135deg, rgba(72,217,255,.12), rgba(37,99,235,.07), rgba(115,96,242,.08));
+      border-radius: 34px;
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
+
     .hero-panel-inner {
-      background: rgba(8,17,31,.78); border: 1px solid var(--line); border-radius: 28px; padding: 28px;
+      background: rgba(8,17,31,.78);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
     }
-    .mini-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 18px; }
-    .mini-item { text-align: center; padding: 16px; border-radius: 20px; background: rgba(255,255,255,.05); border: 1px solid var(--line); }
-    .mini-item strong { display: block; color: var(--cyan); font-size: 22px; }
-    .offer-box { padding: 18px; border-radius: 24px; border: 1px solid rgba(72,217,255,.2); background: rgba(72,217,255,.1); margin-top: 14px; }
-    .offer-box.blue { border-color: rgba(37,99,235,.25); background: rgba(37,99,235,.12); }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mini-item {
+      text-align: center;
+      padding: 16px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+    }
+
+    .mini-item strong {
+      display: block;
+      color: var(--cyan);
+      font-size: 22px;
+    }
+
+    .offer-box {
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(72,217,255,.2);
+      background: rgba(72,217,255,.1);
+      margin-top: 14px;
+    }
+
+    .offer-box.blue {
+      border-color: rgba(37,99,235,.25);
+      background: rgba(37,99,235,.12);
+    }
 
     section { padding: 46px 0; }
-    .section-title { max-width: 820px; margin: 0 auto; text-align: center; }
-    .section-title.left { text-align: left; margin: 0; }
-    .section-title .label { color: var(--cyan); font-size: 13px; text-transform: uppercase; letter-spacing: .28em; font-weight: 800; }
-    .section-title h2 { font-size: clamp(30px, 4.6vw, 52px); line-height: 1.08; margin: 10px 0 0; }
-    .section-title p { margin-top: 16px; color: var(--muted); font-size: 18px; }
 
-    .services, .packages, .fiber-grid, .coverage, .faq-grid { display: grid; gap: 18px; }
+    .section-title {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-title.left {
+      text-align: left;
+      margin: 0;
+    }
+
+    .section-title .label {
+      color: var(--cyan);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .28em;
+      font-weight: 800;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 4.6vw, 52px);
+      line-height: 1.08;
+      margin: 10px 0 0;
+    }
+
+    .section-title p {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .services, .packages, .fiber-grid, .coverage, .faq-grid {
+      display: grid;
+      gap: 18px;
+    }
+
     .services { grid-template-columns: repeat(3,1fr); margin-top: 30px; }
     .packages { grid-template-columns: repeat(2,1fr); margin-top: 30px; }
     .service-card, .card, .faq, .coverage-card { padding: 24px; }
+
     .service-card .icon, .fiber-item .icon { font-size: 38px; }
-    .service-card h3, .card h3, .faq h3, .coverage-card h3 { margin: 14px 0 0; font-size: 25px; }
-    .service-card p, .card p, .faq p, .coverage-card p, .fiber-item p { color: var(--muted); }
-    .badge {
-      display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px;
-      background: rgba(72,217,255,.1); border: 1px solid rgba(72,217,255,.16); color: #b7f3ff; font-size: 13px; font-weight: 700;
-    }
-    .price { font-size: 56px; line-height: 1; color: var(--cyan); font-weight: 900; margin-top: 12px; }
-    .list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
-    .list li { display: flex; gap: 10px; align-items: flex-start; color: #edf5ff; }
-    .tick {
-      width: 24px; height: 24px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center;
-      background: rgba(72,217,255,.12); color: var(--cyan); font-weight: 900; flex: 0 0 24px;
+    .service-card h3, .card h3, .faq h3, .coverage-card h3 {
+      margin: 14px 0 0;
+      font-size: 25px;
     }
 
-    .fiber-wrap { display: grid; grid-template-columns: .92fr 1.08fr; gap: 24px; align-items: start; }
+    .service-card p, .card p, .faq p, .coverage-card p, .fiber-item p {
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(72,217,255,.1);
+      border: 1px solid rgba(72,217,255,.16);
+      color: #b7f3ff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 56px;
+      line-height: 1;
+      color: var(--cyan);
+      font-weight: 900;
+      margin-top: 12px;
+    }
+
+    .list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #edf5ff;
+    }
+
+    .tick {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(72,217,255,.12);
+      color: var(--cyan);
+      font-weight: 900;
+      flex: 0 0 24px;
+    }
+
+    .fiber-wrap {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 24px;
+      align-items: start;
+    }
+
     .fiber-grid { grid-template-columns: repeat(2,1fr); }
+
     .fiber-item {
-      background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
     }
 
     .reasons {
-      margin-top: 26px; display: grid; gap: 12px;
+      margin-top: 26px;
+      display: grid;
+      gap: 12px;
     }
+
     .reason {
-      display: flex; gap: 12px; align-items: center; background: rgba(255,255,255,.05); border: 1px solid var(--line);
-      border-radius: 18px; padding: 14px 16px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px 16px;
     }
 
     .coverage { grid-template-columns: repeat(3,1fr); margin-top: 30px; }
     .faq-grid { grid-template-columns: repeat(2,1fr); margin-top: 30px; }
 
     .contact-wrap {
-      display: grid; grid-template-columns: 1.1fr .9fr; overflow: hidden; border-radius: 34px;
-      border: 1px solid var(--line); background: rgba(255,255,255,.05); box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      overflow: hidden;
+      border-radius: 34px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      box-shadow: var(--shadow);
     }
+
     .contact-main, .contact-side { padding: 34px; }
-    .contact-side { background: rgba(6,16,29,.84); border-left: 1px solid var(--line); }
-    .contact-list { display: grid; gap: 18px; margin-top: 24px; }
-    .small { color: #8da4bf; font-size: 14px; }
+    .contact-side {
+      background: rgba(6,16,29,.84);
+      border-left: 1px solid var(--line);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .small {
+      color: #8da4bf;
+      font-size: 14px;
+    }
 
     .share-box {
-      margin-top: 24px; padding: 18px; border-radius: 24px; background: rgba(24,119,242,.12); border: 1px solid rgba(24,119,242,.24);
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(24,119,242,.12);
+      border: 1px solid rgba(24,119,242,.24);
     }
 
     .floating-actions {
-      position: fixed; right: 16px; bottom: 16px; display: grid; gap: 12px; z-index: 60;
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      display: grid;
+      gap: 12px;
+      z-index: 60;
     }
+
     .floating-actions a {
-      width: 58px; height: 58px; border-radius: 999px; display: grid; place-items: center; font-size: 22px; color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      color: white;
       box-shadow: 0 18px 32px rgba(0,0,0,.35);
     }
+
     .floating-actions .wa { background: var(--green); }
     .floating-actions .vb { background: var(--violet); }
 
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 80;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border-radius: 22px;
+      background: rgba(7,17,31,.94);
+      border: 1px solid var(--line);
+      box-shadow: 0 20px 40px rgba(0,0,0,.35);
+      backdrop-filter: blur(14px);
+    }
+
+    .mobile-bar a,
+    .mobile-bar button {
+      min-height: 52px;
+      border: 0;
+      border-radius: 16px;
+      font-weight: 800;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 10px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+    }
+
+    .mobile-bar .call {
+      background: linear-gradient(135deg, var(--cyan), #81ecff);
+      color: #06101a;
+    }
+
+    .mobile-bar .wa { background: var(--green); }
+    .mobile-bar .map { background: var(--blue); }
+
     footer {
-      border-top: 1px solid var(--line); padding: 24px 0 40px; color: #8ea4bd; text-align: center;
+      border-top: 1px solid var(--line);
+      padding: 24px 0 40px;
+      color: #8ea4bd;
+      text-align: center;
     }
 
     @media (max-width: 980px) {
-      .hero, .fiber-wrap, .contact-wrap, .services, .packages, .coverage, .faq-grid { grid-template-columns: 1fr; }
-      .stats, .mini-grid, .fiber-grid { grid-template-columns: repeat(2,1fr); }
+      .hero, .fiber-wrap, .contact-wrap, .services, .packages, .coverage, .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats, .mini-grid, .fiber-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
       .nav { display: none; }
-      .contact-side { border-left: 0; border-top: 1px solid var(--line); }
+      .contact-side {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
     }
 
     @media (max-width: 640px) {
@@ -193,8 +470,9 @@
       .hero { padding-top: 40px; }
       .price { font-size: 46px; }
       .contact-main, .contact-side, .service-card, .card, .faq, .coverage-card { padding: 22px; }
-      .floating-actions { right: 12px; bottom: 12px; }
-      .floating-actions a { width: 54px; height: 54px; }
+      .floating-actions { display: none; }
+      .mobile-bar { display: grid; }
+      body { padding-bottom: 96px; }
     }
   </style>
 </head>
@@ -214,7 +492,7 @@
         </div>
         <div>
           <div style="font-weight:900;font-size:20px">Giga Group</div>
-          <div class="small">ISP kompani • Gjilan</div>
+          <div class="small">ISP kompani • Rr. Esat Berisha, Gjilan 60000</div>
         </div>
       </a>
 
@@ -222,6 +500,7 @@
         <a href="#sherbimet">Shërbimet</a>
         <a href="#paketat">Paketat</a>
         <a href="#fibra">Fibra Optike</a>
+        <a href="#lokacioni">Lokacioni</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </div>
@@ -234,18 +513,18 @@
           <div class="eyebrow">Internet me fibër optike • TV • 300/300 Mbps</div>
           <h1>Internet modern për shtëpi dhe biznes në <span style="color:var(--cyan)">Gjilan</span>.</h1>
           <p>
-            <strong style="color:white">Giga Group</strong> prezantohet si ISP kompani me fokus te interneti me fibër optike, stabiliteti i lidhjes dhe përvoja moderne digjitale. Faqja është gati për publikim, me kontakt direkt në WhatsApp dhe Viber, pako të qarta dhe dizajn të fortë për promovim edhe në Facebook.
+            <strong style="color:white">Giga Group</strong> prezantohet si ISP kompani me fokus te interneti me fibër optike, stabiliteti i lidhjes dhe përvoja moderne digjitale. Faqja është gati për publikim, me kontakt të drejtpërdrejtë në WhatsApp dhe Viber, paketa të qarta dhe dizajn të përshtatshëm për promovim edhe në Facebook.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#paketat">Shiko paketat</a>
+            <a class="btn btn-primary" href="#paketat">Shikoni paketat</a>
             <a class="btn btn-whatsapp" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin%20me%20fib%C3%ABr%20optike." target="_blank" rel="noopener">WhatsApp</a>
             <a class="btn btn-viber" href="viber://chat?number=%2B38346133129">Viber</a>
           </div>
 
           <div class="stats">
-            <div class="stat"><strong>300</strong><span>Mbps download</span></div>
-            <div class="stat"><strong>300</strong><span>Mbps upload</span></div>
+            <div class="stat"><strong>300</strong><span>Mbps shkarkim</span></div>
+            <div class="stat"><strong>300</strong><span>Mbps ngarkim</span></div>
             <div class="stat"><strong>15€</strong><span>Pako mujore</span></div>
             <div class="stat"><strong>150€</strong><span>Pako vjetore</span></div>
           </div>
@@ -274,18 +553,18 @@
             <div class="offer-box">
               <div class="small" style="color:#baf5ff">Oferta mujore</div>
               <div class="price">15€</div>
-              <div style="margin-top:8px;color:var(--muted)">1 muaj internet + TV • 300 Mbps download • 300 Mbps upload</div>
+              <div style="margin-top:8px;color:var(--muted)">1 muaj internet + TV • 300 Mbps shkarkim • 300 Mbps ngarkim</div>
             </div>
 
             <div class="offer-box blue">
               <div class="small" style="color:#c7d8ff">Oferta vjetore</div>
               <div class="price" style="color:#9cc4ff">150€</div>
-              <div style="margin-top:8px;color:var(--muted)">Pako vjetore me 2 muaj gratis • po të njëjtat specifika</div>
+              <div style="margin-top:8px;color:var(--muted)">Pako vjetore me 2 muaj falas • me të njëjtat specifika</div>
             </div>
 
             <div class="mini-grid">
               <div class="mini-item"><strong>FTTH</strong><span class="small">Fibër optike</span></div>
-              
+              <div class="mini-item"><strong>Gbps</strong><span class="small">Kapacitet i lartë</span></div>
               <div class="mini-item"><strong>TV</strong><span class="small">Argëtim ditor</span></div>
             </div>
           </div>
@@ -309,7 +588,7 @@
           </div>
           <div class="service-card">
             <div class="icon">🏢</div>
-            <h3>Internet për biznes</h3>
+            <h3>Internet për biznese</h3>
             <p>Për zyra, operim digjital, ngarkim dokumentesh, cloud dhe komunikim profesional me lidhje të qëndrueshme.</p>
           </div>
           <div class="service-card">
@@ -326,51 +605,51 @@
         <div class="section-title">
           <div class="label">Paketat</div>
           <h2>Oferta të qarta, me performancë të lartë</h2>
-          <p>Dy pako të thjeshta dhe të forta për klientë që kërkojnë internet të qëndrueshëm dhe TV në një zgjidhje të vetme.</p>
+          <p>Dy paketa të thjeshta dhe të fuqishme për klientë që kërkojnë internet të qëndrueshëm dhe TV në një zgjidhje të vetme.</p>
         </div>
 
         <div class="packages">
           <div class="card">
             <div style="display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap">
               <div>
-                <div style="font-size:28px;font-weight:900">Pako Mujore</div>
+                <div style="font-size:28px;font-weight:900">Pako mujore</div>
                 <div class="price">15€</div>
               </div>
               <div class="badge">Më e kërkuara</div>
             </div>
             <div class="badge" style="margin-top:12px">Internet + TV</div>
-            <p style="margin-top:16px">Zgjidhje praktike për shtëpi, me shpejtësi simetrike dhe argëtim të përditshëm.</p>
+            <p style="margin-top:16px">Zgjidhje praktike për shtëpi, me shpejtësi të lartë dhe argëtim të përditshëm.</p>
             <ul class="list">
               <li><span class="tick">✓</span><span>1 muaj internet dhe TV</span></li>
-              <li><span class="tick">✓</span><span>300 Mbps download</span></li>
-              <li><span class="tick">✓</span><span>300 Mbps upload</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps shkarkim</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps ngarkim</span></li>
               <li><span class="tick">✓</span><span>Lidhje me fibër optike</span></li>
               <li><span class="tick">✓</span><span>E përshtatshme për familje</span></li>
             </ul>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20mujore%2015%E2%82%AC." target="_blank" rel="noopener">Aktivizo në WhatsApp</a>
+              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20mujore%2015%E2%82%AC." target="_blank" rel="noopener">Aktivizoni në WhatsApp</a>
             </div>
           </div>
 
           <div class="card">
             <div style="display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap">
               <div>
-                <div style="font-size:28px;font-weight:900">Pako Vjetore</div>
+                <div style="font-size:28px;font-weight:900">Pako vjetore</div>
                 <div class="price">150€</div>
               </div>
-              <div class="badge">2 muaj gratis</div>
+              <div class="badge">2 muaj falas</div>
             </div>
             <div class="badge" style="margin-top:12px">Vlera më e mirë</div>
             <p style="margin-top:16px">Më shumë vlerë gjatë vitit, me të njëjtat performanca dhe kosto më të favorshme.</p>
             <ul class="list">
               <li><span class="tick">✓</span><span>12 muaj internet dhe TV</span></li>
               <li><span class="tick">✓</span><span>Paguan për 10 muaj</span></li>
-              <li><span class="tick">✓</span><span>300 Mbps download</span></li>
-              <li><span class="tick">✓</span><span>300 Mbps upload</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps shkarkim</span></li>
+              <li><span class="tick">✓</span><span>300 Mbps ngarkim</span></li>
               <li><span class="tick">✓</span><span>Kursim më i madh afatgjatë</span></li>
             </ul>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20vjetore%20150%E2%82%AC." target="_blank" rel="noopener">Aktivizo në WhatsApp</a>
+              <a class="btn btn-primary" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%2C%20dua%20ta%20aktivizoj%20pakon%20vjetore%20150%E2%82%AC." target="_blank" rel="noopener">Aktivizoni në WhatsApp</a>
             </div>
           </div>
         </div>
@@ -389,7 +668,7 @@
           </div>
           <div class="card" style="margin-top:22px">
             <p style="font-size:18px">
-              Për klientin, kjo nënkupton përvojë më të mirë në streaming, video-thirrje, përdorim të shumë pajisjeve, ngarkim skedarësh dhe punë online. Paketa 300/300 Mbps është e përshtatshme sidomos sepse upload dhe download janë të barabarta.
+              Për klientin, kjo nënkupton përvojë më të mirë në transmetim, video-thirrje, përdorim të shumë pajisjeve, ngarkim skedarësh dhe punë online. Paketa 300/300 Mbps është e përshtatshme sepse shpejtësia në shkarkim dhe ngarkim është e njëjtë.
             </p>
           </div>
 
@@ -400,9 +679,9 @@
           <div class="reasons">
             <div class="reason"><span class="tick">✓</span><span>ISP kompani me fokus te cilësia e lidhjes</span></div>
             <div class="reason"><span class="tick">✓</span><span>Shpejtësi 300/300 Mbps për përvojë të balancuar</span></div>
-            <div class="reason"><span class="tick">✓</span><span>Pako të qarta dhe të lehta për t’u zgjedhur</span></div>
-            <div class="reason"><span class="tick">✓</span><span>Kontakt direkt me WhatsApp dhe Viber</span></div>
-            <div class="reason"><span class="tick">✓</span><span>Dizajn i gatshëm për promovim në Facebook</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Paketa të qarta dhe të lehta për t’u zgjedhur</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Kontakt i drejtpërdrejtë me WhatsApp dhe Viber</span></div>
+            <div class="reason"><span class="tick">✓</span><span>Dizajn i përshtatshëm për promovim në Facebook</span></div>
           </div>
         </div>
 
@@ -414,8 +693,8 @@
           </div>
           <div class="fiber-item">
             <div class="icon">⚖️</div>
-            <h3>Shpejtësi simetrike</h3>
-            <p>Upload dhe download të barabartë janë shumë të vlefshme për video-thirrje, cloud dhe punë online.</p>
+            <h3>Shpejtësi e balancuar</h3>
+            <p>Shpejtësia e njëjtë në shkarkim dhe ngarkim është shumë e dobishme për video-thirrje, ruajtje në cloud dhe punë online.</p>
           </div>
           <div class="fiber-item">
             <div class="icon">🛡️</div>
@@ -425,7 +704,7 @@
           <div class="fiber-item">
             <div class="icon">🚀</div>
             <h3>Gati për nevoja moderne</h3>
-            <p>Streaming, IPTV, gaming, punë në distancë dhe mësim online kërkojnë internet të shpejtë dhe të besueshëm.</p>
+            <p>Transmetimi, IPTV, lojërat online, puna në distancë dhe mësimi online kërkojnë internet të shpejtë dhe të besueshëm.</p>
           </div>
         </div>
       </div>
@@ -441,7 +720,7 @@
         <div class="coverage">
           <div class="coverage-card">
             <h3>Lokacioni</h3>
-            <p>Giga Group prezantohet si ofrues lokal me fokus në zonën e Gjilanit.</p>
+            <p>Giga Group gjendet në Rr. Esat Berisha, Gjilan 60000.</p>
           </div>
           <div class="coverage-card">
             <h3>Instalim</h3>
@@ -467,16 +746,16 @@
             <p>Është internet që bart të dhënat me anë të dritës në kabllo optike, duke ofruar shpejtësi të larta dhe lidhje të qëndrueshme.</p>
           </div>
           <div class="faq">
-            <h3>Pse 300 Mbps download dhe 300 Mbps upload janë të rëndësishme?</h3>
-            <p>Sepse shpejtësia simetrike ndihmon jo vetëm në shfletim dhe streaming, por edhe në video-thirrje, cloud dhe ngarkim skedarësh.</p>
+            <h3>Pse 300 Mbps shkarkim dhe 300 Mbps ngarkim janë të rëndësishme?</h3>
+            <p>Sepse shpejtësia e njëjtë në shkarkim dhe ngarkim ndihmon jo vetëm në shfletim dhe transmetim, por edhe në video-thirrje, cloud dhe ngarkim skedarësh.</p>
           </div>
           <div class="faq">
             <h3>A është kjo pako e përshtatshme për familje?</h3>
             <p>Po. Është e përshtatshme për përdorim nga disa pajisje njëkohësisht, për TV, telefona, laptopë dhe platforma digjitale.</p>
           </div>
           <div class="faq">
-            <h3>A mund ta promovoj në Facebook?</h3>
-            <p>Po. Faqja është ndërtuar me titull, përshkrim dhe pamje që ta bëjë më tërheqëse kur ta shpërndash pasi të publikohet.</p>
+            <h3>A mund të promovohet në Facebook?</h3>
+            <p>Po. Faqja është ndërtuar me titull, përshkrim dhe pamje që ta bëjë më tërheqëse kur të shpërndahet pasi të publikohet.</p>
           </div>
         </div>
       </div>
@@ -486,9 +765,9 @@
       <div class="container contact-wrap">
         <div class="contact-main">
           <div class="label">Kontakt</div>
-          <h2 style="font-size:clamp(30px,4.6vw,52px);margin:10px 0 0">Bëhu pjesë e rrjetit të Giga Group</h2>
+          <h2 style="font-size:clamp(30px,4.6vw,52px);margin:10px 0 0">Bëhuni pjesë e rrjetit të Giga Group</h2>
           <p style="color:var(--muted);font-size:18px;max-width:700px;margin-top:18px">
-            Për internet me fibër optike dhe TV në Gjilan, kontakto Giga Group dhe zgjedh paketën që të përshtatet më së miri.
+            Për internet me fibër optike dhe TV në Gjilan, kontaktoni Giga Group dhe zgjidhni paketën që ju përshtatet më së miri.
           </p>
 
           <div class="contact-actions">
@@ -498,9 +777,9 @@
           </div>
 
           <div class="share-box">
-            <strong style="display:block;font-size:20px">Për share në Facebook</strong>
+            <strong style="display:block;font-size:20px">Për shpërndarje në Facebook</strong>
             <p style="color:var(--muted);margin:10px 0 0">
-              Pasi ta publikosh faqen, zëvendëso linkun te butoni Facebook me linkun real të faqes tënde dhe shpërndaje menjëherë.
+              Klikoni butonin më poshtë dhe shpërndajeni faqen drejtpërdrejt në Facebook.
             </p>
             <div class="share-actions">
               <a class="btn btn-facebook" id="facebookShareBtn" href="#" target="_blank" rel="noopener">Shpërndaje në Facebook</a>
@@ -531,7 +810,7 @@
             </div>
             <div>
               <div class="small">Adresa</div>
-              <div style="font-size:22px;font-weight:800">Gjilan</div>
+              <div style="font-size:22px;font-weight:800">Rr. Esat Berisha, Gjilan 60000</div>
             </div>
             <div>
               <div class="small">Numri kontaktues</div>
@@ -541,64 +820,72 @@
         </div>
       </div>
     </section>
-  
+
     <section id="lokacioni">
       <div class="container">
         <div class="section-title">
           <div class="label">Lokacioni</div>
           <h2>Na gjeni në Gjilan</h2>
-          <p>Kliko butonin më poshtë dhe navigimi hapet automatikisht në Google Maps ose Apple Maps për directions drejt lokacionit tonë.</p>
+          <p>Klikoni butonin më poshtë dhe lokacioni hapet drejtpërdrejt në Google Maps.</p>
         </div>
 
         <div style="margin-top:30px;display:grid;gap:18px;grid-template-columns:1fr;max-width:700px;margin-left:auto;margin-right:auto">
           <div class="card" style="text-align:center">
             <h3>Lokacioni i Giga Group</h3>
-            <p>Gjilan • ISP kompani • Internet me fibër optike</p>
+            <p>Rr. Esat Berisha, Gjilan 60000 • ISP kompani • Internet me fibër optike</p>
 
             <div class="hero-actions" style="justify-content:center">
-              <button class="btn btn-primary" id="openMapsBtn">Hap lokacionin</button>
+              <button class="btn btn-primary" id="openMapsBtn" type="button">Hap lokacionin</button>
             </div>
 
             <div class="small" style="margin-top:12px">
-              Navigimi do të hapet automatikisht në Google Maps ose Apple Maps.
+              Lokacioni hapet drejtpërdrejt në Google Maps.
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
-
-  <script>
-    const MAP_LINK = "https://maps.app.goo.gl/PqxwPnw7t98mKi2J8";
-
-    document.getElementById("openMapsBtn").addEventListener("click", function () {
-      window.open(MAP_LINK, "_blank");
-    });
-
 
   <div class="floating-actions">
     <a class="wa" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin." target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
     <a class="vb" href="viber://chat?number=%2B38346133129" aria-label="Viber">✦</a>
   </div>
 
+  <div class="mobile-bar">
+    <a class="call" href="tel:+38346133129">Telefono</a>
+    <a class="wa" href="https://wa.me/38346133129?text=P%C3%ABrsh%C3%ABndetje%20Giga%20Group%2C%20dua%20informata%20p%C3%ABr%20internetin." target="_blank" rel="noopener">WhatsApp</a>
+    <button class="map" id="openMapsBtnMobile" type="button">Lokacioni</button>
+  </div>
+
   <footer>
-    © <span id="year"></span> Giga Group • ISP kompani • Gjilan • Internet me fibër optike dhe TV
+    © <span id="year"></span> Giga Group • ISP kompani • Rr. Esat Berisha, Gjilan 60000 • Internet me fibër optike dhe TV
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const SITE_URL = 'https://vendose-linkun-tuaj.com';
+    const SITE_URL = 'https://gigagjilan.github.io/gigagroup-website/';
     const facebookBtn = document.getElementById('facebookShareBtn');
-    facebookBtn.addEventListener('click', function (e) {
-      if (SITE_URL.includes('vendose-linkun-tuaj.com')) {
-        e.preventDefault();
-        alert('Pasi ta publikosh faqen, zëvendëso SITE_URL te kodi me linkun real të faqes. Pastaj butoni Facebook punon direkt.');
-      } else {
-        facebookBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL);
-      }
-    });
+    if (facebookBtn) {
+      facebookBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL);
+    }
+
+    const MAP_LINK = 'https://maps.app.goo.gl/PqxwPnw7t98mKi2J8';
+    const openMapsBtn = document.getElementById('openMapsBtn');
+    const openMapsBtnMobile = document.getElementById('openMapsBtnMobile');
+
+    function openLocation() {
+      window.open(MAP_LINK, '_blank');
+    }
+
+    if (openMapsBtn) {
+      openMapsBtn.addEventListener('click', openLocation);
+    }
+
+    if (openMapsBtnMobile) {
+      openMapsBtnMobile.addEventListener('click', openLocation);
+    }
   </script>
 </body>
 </html>

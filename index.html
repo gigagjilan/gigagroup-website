@@ -13,7 +13,6 @@
   <style>
     :root {
       --bg: #07111f;
-      --bg-soft: #0d1b2d;
       --card: rgba(255,255,255,0.06);
       --line: rgba(255,255,255,0.1);
       --text: #f8fbff;
@@ -42,7 +41,6 @@
     }
 
     a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
     .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
 
     .btn {
@@ -96,7 +94,6 @@
       gap: 34px;
       align-items: center;
     }
-
     .eyebrow {
       display: inline-flex;
       gap: 10px;
@@ -109,21 +106,18 @@
       font-size: 14px;
       font-weight: 700;
     }
-
     h1 {
       font-size: clamp(38px, 6vw, 68px);
       line-height: 1.02;
       margin: 18px 0 0;
       letter-spacing: -0.04em;
     }
-
     .hero p {
       color: var(--muted);
       font-size: 18px;
       max-width: 700px;
       margin-top: 20px;
     }
-
     .hero-actions, .contact-actions, .share-actions {
       display: flex;
       flex-wrap: wrap;
@@ -137,14 +131,12 @@
       gap: 14px;
       margin-top: 30px;
     }
-
     .stat, .card, .faq, .contact-side, .coverage-card, .service-card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-
     .stat { padding: 18px; }
     .stat strong {
       display: block;
@@ -166,21 +158,18 @@
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
     }
-
     .hero-panel-inner {
       background: rgba(8,17,31,.78);
       border: 1px solid var(--line);
       border-radius: 28px;
       padding: 28px;
     }
-
     .mini-grid {
       display: grid;
       grid-template-columns: repeat(3,1fr);
       gap: 12px;
       margin-top: 18px;
     }
-
     .mini-item {
       text-align: center;
       padding: 16px;
@@ -188,13 +177,11 @@
       background: rgba(255,255,255,.05);
       border: 1px solid var(--line);
     }
-
     .mini-item strong {
       display: block;
       color: var(--cyan);
       font-size: 22px;
     }
-
     .offer-box {
       padding: 18px;
       border-radius: 24px;
@@ -202,7 +189,6 @@
       background: rgba(72,217,255,.1);
       margin-top: 14px;
     }
-
     .offer-box.blue {
       border-color: rgba(37,99,235,.25);
       background: rgba(37,99,235,.12);
@@ -215,12 +201,10 @@
       margin: 0 auto;
       text-align: center;
     }
-
     .section-title.left {
       text-align: left;
       margin: 0;
     }
-
     .section-title .label {
       color: var(--cyan);
       font-size: 13px;
@@ -228,13 +212,11 @@
       letter-spacing: .28em;
       font-weight: 800;
     }
-
     .section-title h2 {
       font-size: clamp(30px, 4.6vw, 52px);
       line-height: 1.08;
       margin: 10px 0 0;
     }
-
     .section-title p {
       margin-top: 16px;
       color: var(--muted);
@@ -245,7 +227,6 @@
       display: grid;
       gap: 18px;
     }
-
     .services { grid-template-columns: repeat(3,1fr); margin-top: 30px; }
     .packages { grid-template-columns: repeat(2,1fr); margin-top: 30px; }
     .service-card, .card, .faq, .coverage-card { padding: 24px; }
@@ -255,7 +236,6 @@
       margin: 14px 0 0;
       font-size: 25px;
     }
-
     .service-card p, .card p, .faq p, .coverage-card p, .fiber-item p {
       color: var(--muted);
     }
@@ -272,7 +252,6 @@
       font-size: 13px;
       font-weight: 700;
     }
-
     .price {
       font-size: 56px;
       line-height: 1;
@@ -280,7 +259,6 @@
       font-weight: 900;
       margin-top: 12px;
     }
-
     .list {
       margin: 18px 0 0;
       padding: 0;
@@ -288,14 +266,12 @@
       display: grid;
       gap: 12px;
     }
-
     .list li {
       display: flex;
       gap: 10px;
       align-items: flex-start;
       color: #edf5ff;
     }
-
     .tick {
       width: 24px;
       height: 24px;
@@ -315,9 +291,7 @@
       gap: 24px;
       align-items: start;
     }
-
     .fiber-grid { grid-template-columns: repeat(2,1fr); }
-
     .fiber-item {
       background: var(--card);
       border: 1px solid var(--line);
@@ -331,7 +305,6 @@
       display: grid;
       gap: 12px;
     }
-
     .reason {
       display: flex;
       gap: 12px;
@@ -354,19 +327,16 @@
       background: rgba(255,255,255,.05);
       box-shadow: var(--shadow);
     }
-
     .contact-main, .contact-side { padding: 34px; }
     .contact-side {
       background: rgba(6,16,29,.84);
       border-left: 1px solid var(--line);
     }
-
     .contact-list {
       display: grid;
       gap: 18px;
       margin-top: 24px;
     }
-
     .small {
       color: #8da4bf;
       font-size: 14px;
@@ -388,7 +358,6 @@
       gap: 12px;
       z-index: 60;
     }
-
     .floating-actions a {
       width: 58px;
       height: 58px;
@@ -399,7 +368,6 @@
       color: white;
       box-shadow: 0 18px 32px rgba(0,0,0,.35);
     }
-
     .floating-actions .wa { background: var(--green); }
     .floating-actions .vb { background: var(--violet); }
 
@@ -419,7 +387,6 @@
       box-shadow: 0 20px 40px rgba(0,0,0,.35);
       backdrop-filter: blur(14px);
     }
-
     .mobile-bar a,
     .mobile-bar button {
       min-height: 52px;
@@ -435,12 +402,10 @@
       color: white;
       text-decoration: none;
     }
-
     .mobile-bar .call {
       background: linear-gradient(135deg, var(--cyan), #81ecff);
       color: #06101a;
     }
-
     .mobile-bar .wa { background: var(--green); }
     .mobile-bar .map { background: var(--blue); }
 

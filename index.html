@@ -552,19 +552,13 @@
     © <span id="year"></span> Giga Group • ISP kompani • Gjilan • Internet me fibër optike dhe TV
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-    const SITE_URL = 'https://gigagjilan.github.io/gigagroup-website/';
-    const facebookBtn = document.getElementById('facebookShareBtn');
-    facebookBtn.addEventListener('click', function (e) {
-      if (SITE_URL.includes('vendose-linkun-tuaj.com')) {
-        e.preventDefault();
-        alert('Pasi ta publikosh faqen, zëvendëso SITE_URL te kodi me linkun real të faqes. Pastaj butoni Facebook punon direkt.');
-      } else {
-        facebookBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL);
-      }
-    });
-  </script>
+  const SITE_URL = 'https://gigagjilan.github.io/gigagroup-website/';
+  const facebookBtn = document.getElementById('facebookShareBtn');
+
+  facebookBtn.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(SITE_URL);
+</script>
 </body>
 </html>
